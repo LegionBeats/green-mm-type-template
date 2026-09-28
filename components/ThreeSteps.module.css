@@ -1,0 +1,56 @@
+.section {
+  max-width: var(--w-section);
+  margin: 0 auto;
+  padding: var(--pad-section-y) var(--pad-section-x);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.heading {
+  margin: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+  font-size: var(--t-h2);
+}
+
+.step {
+  padding: 6px 6px 0;
+  position: relative;
+}
+
+.numeral {
+  font-weight: 900;
+  font-size: var(--t-step);
+  letter-spacing: -0.05em;
+  color: var(--step-ghost);
+  line-height: 0.72;
+}
+
+/* Step 03 is green-tinted and brighter — it marks the payoff, not a mistake. */
+.numeralAccent {
+  color: var(--step-ghost-accent);
+}
+
+/* Pulls the title up over the numeral's lower half; position: relative keeps
+   it above. Proportional to the numeral (-32px at its full 150px) so the
+   overlap holds together as the numeral shrinks. */
+.title {
+  position: relative;
+  margin: calc(var(--t-step) / 150 * -32) 0 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  font-size: 22px;
+}
+
+.body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
